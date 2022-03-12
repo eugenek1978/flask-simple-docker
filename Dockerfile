@@ -13,6 +13,5 @@ RUN pip3 install -r requirements.txt
 # copy every content from the local file to the image
 COPY . /app
 
-CMD apk add curl
-ENTRYPOINT [ "python3" ]
-CMD [ "app/app.py" , "--host=0.0.0.0"]
+#sart application
+CMD python3 app/app.py
