@@ -12,7 +12,7 @@ class HelloWorld(Resource):
 class HelloWorldWithName(Resource):
     def get(self, name):
         if name == 'Yevgeniy':
-            abort(404, message='Hello exception')
+            abort(501, errorMessage='Hello exception')
         return 'Hello ' + name + ' !!!'
 
 ##
